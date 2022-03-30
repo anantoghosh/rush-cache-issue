@@ -67,22 +67,6 @@ common/autoinstallers/*/.npmrc
 # Heft
 .heft
 
-# Common toolchain intermediate files
-temp
-
-lib-amd
-lib-es6
-lib-esnext
-lib-commonjs
-dist
-*.scss.ts
-*.sass.ts
-
-# Parcel
-.parcel-cache
-
-# Certificates
-*.pem
-
-# oidc token
-web-identity-token
+lib-commonjs/
+dist/
+temp/
