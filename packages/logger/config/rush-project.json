@@ -1,0 +1,22 @@
+/**
+ * The "config/rush-project.json" file configures Rush-specific settings for an individual project
+ * in a Rush monorepo.  More documentation is available on the Rush website: https://rushjs.io
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-project.schema.json",
+
+  "incrementalBuildIgnoredGlobs": ["temp/**", "*.md"],
+
+  "disableBuildCacheForProject": false, // formerly buildCacheOptions.disableBuildCache
+
+  "operationSettings": [
+    // formerly phaseOptions
+    {
+      "operationName": "build",
+
+      // The "build" operation's output folder names were previously defined
+      // in the top-level `projectOutputFolderNames` property.
+      "outputFolderNames": ["lib-commonjs", "dist"]
+    }
+  ]
+}
